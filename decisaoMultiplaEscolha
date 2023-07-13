@@ -1,0 +1,13 @@
+nome=input("Digite o nome: ")
+idade=int(input("Digite a idade: "))
+doencaIn=input("Suspeita de doença infectocontagiosa?").upper()
+if idade>= 65 and doencaIn=="SIM":
+        print("O paciente " + nome +" deve ser encaminhado para sala amarela - COM PRIORIDADE")
+elif idade < 65 and doencaIn=="SIM":
+        print ("O pacente " + nome + " Deve ser direcionado para sala amarela - SEM PRIORIDADE")
+elif idade >= 65 and doencaIn=="NÃO":
+        print("O Paciente " + nome + "deve ser encaminhado a sala Branca COM PRIORIDADE")
+elif idade < 65 and doencaIn=="NÃO":
+        print("O Paciente " + nome + "Deve ser encaminhado a sala branca SEM PRIORIDADE")
+else:
+        print("Responda a suspeita de doenças inftocontagiosas com SIM ou NAO")
